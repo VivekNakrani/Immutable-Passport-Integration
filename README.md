@@ -116,7 +116,12 @@ npm run start
 
 1. **Choose a Suitable Repository**: Explore platforms like GitHub and GitLab to find a repository that matches your requirements.
 
-2. **Clone the Repository**: Utilize the `git clone` command to copy the repository to your local machine. You can find more information on how to clone a repository [here](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
+2. **Clone the Repository**: Utilize the `git clone` command to copy the repository to your local machine.
+
+```shell
+git clone <repository-url>
+cd name-of-the-repo
+```   
 
 **General Guidelines**
 
@@ -132,15 +137,23 @@ By either creating a new application or cloning an existing repository, you've l
 
 ### II. Registering Your Application
 
-To integrate Immutable Passport, you need to register your application on the Immutable Developer Hub. Here's how:
+To start using Immutable Passport, follow these steps to register your application on the Immutable Developer Hub:
 
-1. Visit the [Immutable Developer Hub](https://developer.immutable.com/).
-2. Create an account there.
-3. Navigate to the "Applications" section.
-4. Click "Create Application" and follow the on-screen instructions to set up your application.
-5. Once your application is registered, make sure to copy the Client ID and Client Secret to a secure location for your application.
+1. **Visit the Hub**: Go to the [Immutable Developer Hub](https://hub.immutable.com/login).
 
-By registering your application, you've taken the first step toward Immutable Passport integration.
+2. **Create an Account**: If you don't already have one, create an account there.
+
+3. **Create Your Application**: Click on "Create Application" and follow the on-screen instructions to set up your application.
+
+4. **Configure Your App**:
+   - Choose "Web Application" as the application type.
+   - Enter a unique name in the "Client Name" field.
+   - Specify valid URLs for "Logout" and "Callback" in their respective sections.
+
+5. **Copy Your Credentials**: Once your application is registered, make sure to securely store the Client ID and Client Secret for your application.
+
+By completing these steps, you've successfully registered your application, marking the first milestone in integrating Immutable Passport.
+
 
 ### III. Installing and Initializing the Passport Client
 
