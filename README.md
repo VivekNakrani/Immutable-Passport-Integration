@@ -149,6 +149,7 @@ To start using Immutable Passport, follow these steps to register your applicati
 
 ```
 CLIENT_ID = "Your_Client_ID"
+CLIENT_SECRET = "YOUR_CLIENT_SECRET"
 ```
 
 By completing these steps, you've successfully registered your application, marking the first milestone in integrating Immutable Passport.
@@ -157,95 +158,124 @@ By completing these steps, you've successfully registered your application, mark
 
 In your application, you'll need to install the necessary dependencies and initialize the Passport Client to interact with Immutable Passport.
 
-**Step 1: Install Required Dependencies**
+Install immutable-passport using npm:
+```
+npm install immutable-passport
+npm install @imtbl/sdk ethers
+# OR
+yarn add immutable-passport
+yarn add @imtbl/sdk ethers
+```
+Create a new file called index.js in the my-immutable-app directory and add the following code:
+```
+require('dotenv').config(); // Load environment variables from .env file
+const passport = require('@immutablex/passport');
 
-- Install required dependencies.
+const app = passport({
+  clientId: process.env.CLIENT_ID, // Use the CLIENT_ID from .env
+  clientSecret: process.env.CLIENT_SECRET, // Use the CLIENT_SECRET from .env
+  callbackURL: 'http://localhost:3000/auth/callback',
+});
 
-**Step 2: Initialize the Passport Client**
-
-- Initialize the Passport Client with the obtained Client ID and configure other settings.
-
+module.exports = app;
+```
 With this step, your application is ready to connect with Immutable Passport securely.
 
-### IV. Logging in a User with Passport
-
-**Step 1: Define a Function to Initiate User Authentication**
-
+###IV. Logging in a User with Passport
 ```
+// Import the Passport app you've created
+const passport = require('./index');
+
 // Define a function to initiate user authentication
 const loginWithPassport = async () => {
-  // Request user account access through Passport provider.
   try {
-    // If successful, the user is connected.
+    // Assuming you have a user object, replace 'user' with the actual user object.
+    const user = getUser(); // Replace with your user retrieval logic
+
+    if (!user) {
+      console.error('User not found.');
+      return;
+    }
+
+    // Log in the user using Passport's authenticate function
+    passport.authenticate('local', (err, user) => {
+      if (err) {
+        console.error('Login error:', err);
+      } else {
+        // If successful, the user is connected.
+        // You can redirect or perform additional actions here
+      }
+    });
+
   } catch (error) {
-    // Handle authentication errors.
+    console.error('Authentication error:', error);
   }
 };
 
 // Call the login function when needed to trigger the authentication process.
+loginWithPassport();
 ```
-
 With this code, you can effectively handle user authentication in your application.
 
 ### V. Displaying User Information
-
-Step 1: Define a Function to Fetch and Display User Information
-
 ```
 // Define a function to fetch and display user information
 const displayUserInfo = async () => {
-  // Fetch the user's profile information and tokens.
   try {
-    // Display user information in your application.
+    const userProfile = await passportProvider.getUserInfo();
+    const { accessToken, idToken } = passportProvider.getTokens();
+
+    console.log("User Profile:", userProfile);
+    console.log("Access Token:", accessToken);
+    console.log("ID Token:", idToken);
   } catch (error) {
-    // Handle errors when fetching user information.
+    errorHandling("Error fetching user information", error);
   }
 };
 
 // Call the function when needed to display user information.
+displayUserInfo();
 ```
-
-By following these steps, you can effectively fetch and display user information post-authentication.
+With this code, you can effectively fetch and display user information post-authentication.
 
 ### VI. Logging Out a User
-
-Step 1: Define a Function to Log Out a User
-
 ```
-// Define a function to log out a user.
+import { passportInstance } from "@/lib/immutable";
+
+// Define a function to log out a user
 const logoutUser = () => {
-  // Trigger the Passport logout process.
+  // Trigger the Passport logout process
+  passportInstance.logout();
 };
 
 // Call the function when the user initiates the logout process.
+logoutUser();
 ```
-
 With this code, you can implement user logout functionality effectively.
 
 ### VII. Initiating a Transaction from Passport
-
-Step 1: Define a Function to Initiate a Transaction
-
 ```
-// Define a function to initiate a transaction.
-const initiatePassportTransaction = async (transactionData) => {
-  // Use the 'initiateTransaction' function to send the transaction data.
+import { passportInstance } from "@/lib/immutable";
+
+const sendTransaction = async (recipient, value, data) => {
   try {
-    // Handle the transaction response, e.g., display the transaction hash.
+    const transaction = { to: recipient, value, data };
+    const transactionHash = await passportInstance.sendTransaction(transaction);
+    console.log("Transaction Hash:", transactionHash);
   } catch (error) {
-    // Handle errors when initiating the transaction.
+    console.error("Error sending transaction:", error);
   }
 };
 
-// Call the function with the required transaction data when initiating a transaction.
-const transactionData = {
-  // Define the transaction data and parameters here.
-};
+// Define transaction parameters
+const recipientAddress = 'YOUR_RECIPIENT_ADDRESS';
+const value = '1000000000000000000'; // 1 Ether in wei
+const transactionData = 'Hello, world!'; // Replace with your data
 
-// Call the function to initiate the transaction.
+// Call the function to send the transaction.
+sendTransaction(recipientAddress, value, transactionData);
 ```
-
-By following these steps, you'll be able to initiate transactions from Passport in your application. Ensure you populate the transactionData object with the appropriate values for your use case.
+With this code, you'll be able to initiate transactions from Passport in your application. Ensure you populate the transactionData object with the appropriate values for your use case.
 
 ## 4. Video Tutorial
 
