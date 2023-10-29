@@ -8,8 +8,8 @@
 2. [Prerequisites](#2-prerequisites)
 3. [Immutable Passport Integration Steps](#3-immutable-passport-integration-steps)
    - [I. Creating Your Application](#i-creating-your-application)
-     - [i. Create a new application](#create-a-new-application)
-     - [ii. Clone an existing application](#clone-an-existing-application)
+     - [i. Create a New Application](#i-create-a-new-application)
+     - [ii. Clone an Existing Application](#ii-clone-an-existing-application)
    - [II. Registering Your Application](#ii-registering-your-application)
    - [III. Installing and Initializing the Passport Client](#iii-installing-and-initializing-the-passport-client)
    - [IV. Logging in a User with Passport](#iv-logging-in-a-user-with-passport)
@@ -54,31 +54,81 @@ By ensuring these prerequisites, you'll be well-prepared to seamlessly integrate
 
 ## 3. Immutable Passport Integration Steps
 
-### i. Creating Your Application
+### I. Creating Your Application
 
-First, you need a basic Next.js application. You have two options: create one from scratch or clone a pre-built repository.
+Here's the revised section:
 
-#### Create a New Application
+**Starting Your Application Setup**
 
-- Create a new project directory.
-- Navigate to the project directory.
-- Initialize a new Node.js project to generate a package.json file.
-- Install Next.js and React.
-- Create a "pages" directory to host your application pages.
-- Create a basic Next.js page in the "pages" directory.
-- Update your package.json to include a "dev" script.
-- Start your Next.js application.
+**Step 1: Preparing Your Application or Repository**
 
-#### Clone an Existing Application
+Before you jump into integrating Immutable Passport, you'll need an application or a repository to work with. Here are the essential steps to get your environment ready:
 
-- Clone a repository with a pre-built Next.js application.
-- Navigate to the project directory.
-- Install project dependencies.
-- Start the application.
+#### i. Create a New Application
 
-Make sure your application is set up and running before moving on.
+1. **Create a New Project Directory**: Open your preferred command-line tool and create a fresh project directory. Use commands like `mkdir` to create it and `cd` to navigate inside.
 
-### ii. Registering Your Application
+```shell
+mkdir my-immutable-app
+cd my-immutable-app
+```
+
+2. **Initialize a New Node.js Project**: Initiate a new Node.js project with either `npm init` or `yarn init`. Follow the on-screen instructions to configure your project.
+
+```shell
+npm init -y
+# OR
+yarn init -y
+```
+
+3. **Develop Application Files**: Start by creating essential application files like `index.html` for the front-end and `app.js` for your application logic.
+
+```shell
+mkdir pages
+```
+
+In the "pages" folder, create a basic "index.js" file.
+
+```javascript
+function Home() {
+  return <div>Hello, Immutable Passport Integration!</div>
+}
+
+export default Home;
+```
+
+4. **Install Required Dependencies**: Depending on your project's needs, install additional packages or frameworks using `npm install` or `yarn add`.
+
+```shell
+npm install
+# OR
+yarn add
+```
+
+5. **Run Your Application**
+
+```shell
+npm run start
+```
+
+#### ii. Clone an Existing Application
+
+1. **Choose a Suitable Repository**: Explore platforms like GitHub and GitLab to find a repository that matches your requirements.
+
+2. **Clone the Repository**: Utilize the git clone command to copy the repository to your local machine. You can find more information on how to clone a repository here.
+
+**General Guidelines**
+
+- Ensure your application or cloned repository maintains a well-organized structure, clearly separating front-end and back-end components.
+
+- For a fresh project, carefully consider the architecture and plan your development. Employ a version control system like Git to track changes effectively.
+
+- Keep your application lightweight initially, adding features and components progressively.
+
+- Test your application during development, even before integrating Immutable Passport, to ensure its correct functionality at each stage.
+
+By either creating a new application or cloning an existing repository, you've laid the foundation for the next steps in the Immutable Passport integration journey. This environment will serve as the canvas on which you'll unleash the capabilities of Immutable Passport.
+### II. Registering Your Application
 
 To integrate Immutable Passport, you need to register your application on the Immutable Developer Hub. Here's how:
 
@@ -89,18 +139,23 @@ To integrate Immutable Passport, you need to register your application on the Im
 
 By registering your application, you've taken the first step toward Immutable Passport integration.
 
-### iii. Installing and Initializing the Passport Client
+### III. Installing and Initializing the Passport Client
 
 In your application, you'll need to install the necessary dependencies and initialize the Passport Client to interact with Immutable Passport.
 
+**Step 1: Install Required Dependencies**
+
 - Install required dependencies.
+
+**Step 2: Initialize the Passport Client**
+
 - Initialize the Passport Client with the obtained Client ID and configure other settings.
 
 With this step, your application is ready to connect with Immutable Passport securely.
 
-### iv. Logging in a User with Passport
+### IV. Logging in a User with Passport
 
-To log in a user, you'll need to initiate the authentication process. Use the following code as a guide:
+**Step 1: Define a Function to Initiate User Authentication**
 
 ```
 // Define a function to initiate user authentication
@@ -118,12 +173,11 @@ const loginWithPassport = async () => {
 
 With this code, you can effectively handle user authentication in your application.
 
-### v. Displaying User Information
+### V. Displaying User Information
 
-After authenticating a user, you can access and display their information, including the ID token and access token. Use this code to fetch and display user data:
+Step 1: Define a Function to Fetch and Display User Information
 
 ```
-
 // Define a function to fetch and display user information
 const displayUserInfo = async () => {
   // Fetch the user's profile information and tokens.
@@ -139,9 +193,9 @@ const displayUserInfo = async () => {
 
 By following these steps, you can effectively fetch and display user information post-authentication.
 
-### vi. Logging Out a User
+### VI. Logging Out a User
 
-To log out a user from your application, use the following code:
+Step 1: Define a Function to Log Out a User
 
 ```
 // Define a function to log out a user.
@@ -154,9 +208,10 @@ const logoutUser = () => {
 
 With this code, you can implement user logout functionality effectively.
 
-### vii. Initiating a Transaction from Passport
+### VII. Initiating a Transaction from Passport
 
-To initiate a transaction using Passport, provide the necessary transaction data and parameters. Use the code snippet below as a guide:
+Step 1: Define a Function to Initiate a Transaction
+
 ```
 // Define a function to initiate a transaction.
 const initiatePassportTransaction = async (transactionData) => {
@@ -175,6 +230,7 @@ const transactionData = {
 
 // Call the function to initiate the transaction.
 ```
+
 By following these steps, you'll be able to initiate transactions from Passport in your application. Ensure you populate the transactionData object with the appropriate values for your use case.
 
 ## 4. Video Tutorial
