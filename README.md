@@ -56,8 +56,6 @@ By ensuring these prerequisites, you'll be well-prepared to seamlessly integrate
 
 ### I. Creating Your Application
 
-Here's the revised section:
-
 **Starting Your Application Setup**
 
 **Step 1: Preparing Your Application or Repository**
@@ -87,14 +85,17 @@ yarn init -y
 mkdir pages
 ```
 
-In the "pages" folder, create a basic "index.js" file.
+In the "pages" folder, create a basic "app.js" file and copy the following JavaScript code into it:
 
 ```javascript
+import React from 'react';
+import ReactDOM from 'react-dom';
+
 function Home() {
-  return <div>Hello, Immutable Passport Integration!</div>
+  return <div>Hey, It is Immutable Passport Integration</div>;
 }
 
-export default Home;
+ReactDOM.render(<Home />, document.getElementById('root'));
 ```
 
 4. **Install Required Dependencies**: Depending on your project's needs, install additional packages or frameworks using `npm install` or `yarn add`.
@@ -115,7 +116,7 @@ npm run start
 
 1. **Choose a Suitable Repository**: Explore platforms like GitHub and GitLab to find a repository that matches your requirements.
 
-2. **Clone the Repository**: Utilize the git clone command to copy the repository to your local machine. You can find more information on how to clone a repository here.
+2. **Clone the Repository**: Utilize the `git clone` command to copy the repository to your local machine. You can find more information on how to clone a repository [here](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
 
 **General Guidelines**
 
@@ -127,15 +128,17 @@ npm run start
 
 - Test your application during development, even before integrating Immutable Passport, to ensure its correct functionality at each stage.
 
-By either creating a new application or cloning an existing repository, you've laid the foundation for the next steps in the Immutable Passport integration journey. This environment will serve as the canvas on which you'll unleash the capabilities of Immutable Passport.
+By either creating a new application or cloning an existing repository, you've laid the foundation for the next steps in the Immutable Passport integration journey. This environment will serve as the canvas on which you'll unleash the capabilities of Immutable Passport
+
 ### II. Registering Your Application
 
 To integrate Immutable Passport, you need to register your application on the Immutable Developer Hub. Here's how:
 
-- Sign in to Immutable Developer Hub or create an account if you don't have one.
-- Register a new application, specifying the application type, name, and configuration details.
-- Obtain client credentials, including the Client ID.
-- Add the Client ID to your application's environment variables.
+1. Visit the [Immutable Developer Hub](https://developer.immutable.com/).
+2. Create an account there.
+3. Navigate to the "Applications" section.
+4. Click "Create Application" and follow the on-screen instructions to set up your application.
+5. Once your application is registered, make sure to copy the Client ID and Client Secret to a secure location for your application.
 
 By registering your application, you've taken the first step toward Immutable Passport integration.
 
@@ -239,8 +242,18 @@ By following these steps, you'll be able to initiate transactions from Passport 
 
 Congratulations! You've successfully integrated Immutable Passport into your application, enhancing security and functionality. This guide has covered the entire process, from setting up your application to initiating transactions. Immutable Passport opens up exciting possibilities for blockchain-powered gaming experiences.
 
+![11_1_50](https://github.com/VivekNakrani/Immutable-Passport-Integration/assets/97658605/b713a080-61b3-4827-b704-1e98d67e5162)
+
 ## 6. Additional Resources
 
-For more in-depth information and detailed documentation, be sure to visit the Immutable Passport Documentation. If you have any questions or challenges along the way, don't hesitate to reach out to the Immutable community or support. Happy building! 🚀🎮
+#### Useful Links
+
+1. [Immutable Passport Product Page](https://www.immutable.com/products/passport)
+2. [Immutable Blog](https://www.immutable.com/blog)
+3. [Immutable Documentation](https://docs.immutable.com/)
+4. [Immutable Community Connect](https://www.immutable.com/community/connect)
+5. [Immutable Developers](https://www.immutable.com/developers)
+
+If you have any questions or challenges along the way, don't hesitate to reach out to the Immutable community or support. Happy building! 🚀🎮
 
 This guide offers a structured and unique approach to integrating Immutable Passport into your application, providing both code snippets and explanations. Good luck with your integration, and enjoy the benefits of blockchain authentication and gaming!
