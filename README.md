@@ -181,7 +181,7 @@ module.exports = app;
 ```
 With this step, your application is ready to connect with Immutable Passport securely.
 
-###IV. Logging in a User with Passport
+### IV. Logging in a User with Passport
 ```
 // Import the Passport app you've created
 const passport = require('./index');
@@ -268,9 +268,9 @@ const sendTransaction = async (recipient, value, data) => {
 };
 
 // Define transaction parameters
-const recipientAddress = 'YOUR_RECIPIENT_ADDRESS';
+const recipientAddress = 'RECIPIENT_ADDRESS';
 const value = '1000000000000000000'; // 1 Ether in wei
-const transactionData = 'Hello, world!'; // Replace with your data
+const transactionData = 'Replace with your data';
 
 // Call the function to send the transaction.
 sendTransaction(recipientAddress, value, transactionData);
