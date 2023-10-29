@@ -16,8 +16,9 @@
    - [v. Displaying User Information](#v-displaying-user-information)
    - [vi. Logging Out a User](#vi-logging-out-a-user)
    - [vii. Initiating a Transaction from Passport](#vii-initiating-a-transaction-from-passport)
-4. [Conclusion](#4-conclusion)
-5. [Additional Resources](#5-additional-resources)
+4. [Video Tutorial](#4-video-tutorial)
+5. [Conclusion](#5-conclusion)
+6. [Additional Resources](#6-additional-resources)
 
 ---
 
@@ -176,11 +177,13 @@ const transactionData = {
 ```
 By following these steps, you'll be able to initiate transactions from Passport in your application. Ensure you populate the transactionData object with the appropriate values for your use case.
 
-## 4. Conclusion
+## 4. Video Tutorial
+
+## 5. Conclusion
 
 Congratulations! You've successfully integrated Immutable Passport into your application, enhancing security and functionality. This guide has covered the entire process, from setting up your application to initiating transactions. Immutable Passport opens up exciting possibilities for blockchain-powered gaming experiences.
 
-## 5. Additional Resources
+## 6. Additional Resources
 
 For more in-depth information and detailed documentation, be sure to visit the Immutable Passport Documentation. If you have any questions or challenges along the way, don't hesitate to reach out to the Immutable community or support. Happy building! 🚀🎮
 
