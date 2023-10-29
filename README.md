@@ -116,12 +116,7 @@ npm run start
 
 1. **Choose a Suitable Repository**: Explore platforms like GitHub and GitLab to find a repository that matches your requirements.
 
-2. **Clone the Repository**: Utilize the `git clone` command to copy the repository to your local machine.
-
-```shell
-git clone <repository-url>
-cd name-of-the-repo
-```   
+2. **Clone the Repository**: Utilize the `git clone` command to copy the repository to your local machine. You can find more information on how to clone a repository [here](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
 
 **General Guidelines**
 
@@ -150,10 +145,13 @@ To start using Immutable Passport, follow these steps to register your applicati
    - Enter a unique name in the "Client Name" field.
    - Specify valid URLs for "Logout" and "Callback" in their respective sections.
 
-5. **Copy Your Credentials**: Once your application is registered, make sure to securely store the Client ID and Client Secret for your application.
+5. **Create a .env File**: Create a .env file and add your Client ID as follows:
+
+```
+CLIENT_ID = "Your_Client_ID"
+```
 
 By completing these steps, you've successfully registered your application, marking the first milestone in integrating Immutable Passport.
-
 
 ### III. Installing and Initializing the Passport Client
 
