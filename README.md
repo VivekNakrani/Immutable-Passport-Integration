@@ -295,6 +295,8 @@ Congratulations! You've successfully integrated Immutable Passport into your app
 4. [Immutable Community Connect](https://www.immutable.com/community/connect)
 5. [Immutable Developers](https://www.immutable.com/developers)
 
+   To know more about Immutable Passport and How to Integrate into Your Application [Visit Here](https://mirror.xyz/0x29054eBcf5d36B7dFc87f82f3c0A23EE05CE4314/KduM90jp2uW6k7ZeqrHJZBagGMNYqdbJr37PDO5-z6Q).
+
 If you have any questions or challenges along the way, don't hesitate to reach out to the Immutable community or support. Happy building! 🚀🎮
 
 This guide offers a structured and unique approach to integrating Immutable Passport into your application, providing both code snippets and explanations. Good luck with your integration, and enjoy the benefits of blockchain authentication and gaming!
