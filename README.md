@@ -26,7 +26,7 @@
 
 ### What is Immutable Passport?
 
-![Immutable Passport](https://github.com/VivekNakrani/Immutable-Passport-Integration/assets/97658605/a2bdea4a-eb79-4f0b-9ff5-6bc5bda598ac)
+<p align="center"><img src="./images/passport.jpg" alt="passport"></p>
 
 Immutable Passport is a cutting-edge blockchain-based authentication system tailored for gaming applications. It delivers robust security, efficient user data management, and the capability to oversee blockchain assets. Game developers can seamlessly integrate this system into their applications by registering with the Immutable Developer Hub.
 
@@ -279,29 +279,29 @@ With this code, you'll be able to initiate transactions from Passport in your ap
 
 ## 4. Sample App
 
-### Stackie Word Blaster - Immutable Passport Integration
+### Stackie Word Blaster 🤝 Immutable Passport Integration
 
-![Stackie Word Blaster](Your_Image_URL_Here)
+<p align="center"><img src="./images/game.png" alt="game"></p>
 
 🚀 **Elevate Your Gaming Experience: Master Immutable Passport Integration with Stackie Word Blaster!**
 
 Are you ready to embark on an extraordinary journey into the world of gaming applications? Now, you have the opportunity to not only play but also clone my exciting game, Stackie Word Blaster, and practice integrating Immutable Passport. Here's your chance to take your gaming skills to new heights.
 
-## Clone Stackie Word Blaster
-[GitHub Repository](https://github.com/VivekNakrani/Immutable-Passport-Integration)
+### Clone Stackie Word Blaster
+[GitHub Repository](https://github.com/VivekNakrani/Stackie-Word-Blaster)
 
 This hands-on experience empowers you to explore and master the integration of Immutable Passport. It's more than just a game; it's a gateway to enhancing your gaming app's security and functionality. Start your adventure today by cloning the repository and immersing yourself in the world of Immutable Passport integration.
 
 Don't miss this exclusive opportunity to empower your gaming application with advanced blockchain-based authentication. Clone Stackie Word Blaster now and unlock a realm of limitless possibilities!
 
-🔐🎮 Ready to level up your gaming experience? Game on with Stackie Word Blaster!
-
+🔐🎮 Ready to level up your gaming experience? 
+🎮🚀 Game on with Stackie Word Blaster!
 
 ## 5. Conclusion
 
 Congratulations! You've successfully integrated Immutable Passport into your application, enhancing security and functionality. This guide has covered the entire process, from setting up your application to initiating transactions. Immutable Passport opens up exciting possibilities for blockchain-powered gaming experiences.
 
-![11_1_50](https://github.com/VivekNakrani/Immutable-Passport-Integration/assets/97658605/b713a080-61b3-4827-b704-1e98d67e5162)
+<p align="left"><img src="./images/meme.jpg" alt="meme"></p>
 
 ## 6. Additional Resources
 
