@@ -26,7 +26,7 @@
 
 ### What is Immutable Passport?
 
-<p align="center"><img src="./images/passport.jpg" alt="passport"></p>
+<p align="center"><img src="./image/passport.png" alt="passport"></p>
 
 Immutable Passport is a cutting-edge blockchain-based authentication system tailored for gaming applications. It delivers robust security, efficient user data management, and the capability to oversee blockchain assets. Game developers can seamlessly integrate this system into their applications by registering with the Immutable Developer Hub.
 
@@ -281,7 +281,7 @@ With this code, you'll be able to initiate transactions from Passport in your ap
 
 ### Stackie Word Blaster 🤝 Immutable Passport Integration
 
-<p align="center"><img src="./images/game.png" alt="game"></p>
+<p align="center"><img src="./image/game.png" alt="game"></p>
 
 🚀 **Elevate Your Gaming Experience: Master Immutable Passport Integration with Stackie Word Blaster!**
 
@@ -301,7 +301,7 @@ Don't miss this exclusive opportunity to empower your gaming application with ad
 
 Congratulations! You've successfully integrated Immutable Passport into your application, enhancing security and functionality. This guide has covered the entire process, from setting up your application to initiating transactions. Immutable Passport opens up exciting possibilities for blockchain-powered gaming experiences.
 
-<p align="left"><img src="./images/meme.jpg" alt="meme"></p>
+<p align="left"><img src="./image/meme.jpg" alt="meme"></p>
 
 ## 6. Additional Resources
 
