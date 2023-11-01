@@ -16,7 +16,7 @@
    - [V. Displaying User Information](#v-displaying-user-information)
    - [VI. Logging Out a User](#vi-logging-out-a-user)
    - [VII. Initiating a Transaction from Passport](#vii-initiating-a-transaction-from-passport)
-4. [Video Tutorial](#4-video-tutorial)
+4. [Sample App](#4-sample-app)
 5. [Conclusion](#5-conclusion)
 6. [Additional Resources](#6-additional-resources)
 
@@ -277,7 +277,25 @@ sendTransaction(recipientAddress, value, transactionData);
 ```
 With this code, you'll be able to initiate transactions from Passport in your application. Ensure you populate the transactionData object with the appropriate values for your use case.
 
-## 4. Video Tutorial
+## 4. Sample App
+
+### Stackie Word Blaster - Immutable Passport Integration
+
+![Stackie Word Blaster](Your_Image_URL_Here)
+
+🚀 **Elevate Your Gaming Experience: Master Immutable Passport Integration with Stackie Word Blaster!**
+
+Are you ready to embark on an extraordinary journey into the world of gaming applications? Now, you have the opportunity to not only play but also clone my exciting game, Stackie Word Blaster, and practice integrating Immutable Passport. Here's your chance to take your gaming skills to new heights.
+
+## Clone Stackie Word Blaster
+[GitHub Repository](https://github.com/VivekNakrani/Immutable-Passport-Integration)
+
+This hands-on experience empowers you to explore and master the integration of Immutable Passport. It's more than just a game; it's a gateway to enhancing your gaming app's security and functionality. Start your adventure today by cloning the repository and immersing yourself in the world of Immutable Passport integration.
+
+Don't miss this exclusive opportunity to empower your gaming application with advanced blockchain-based authentication. Clone Stackie Word Blaster now and unlock a realm of limitless possibilities!
+
+🔐🎮 Ready to level up your gaming experience? Game on with Stackie Word Blaster!
+
 
 ## 5. Conclusion
 
