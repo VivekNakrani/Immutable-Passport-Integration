@@ -30,6 +30,8 @@
 
 Immutable Passport is a cutting-edge blockchain-based authentication system tailored for gaming applications. It delivers robust security, efficient user data management, and the capability to oversee blockchain assets. Game developers can seamlessly integrate this system into their applications by registering with the Immutable Developer Hub.
 
+### **To know more about Immutable Passport, [Read my Write-up](https://mirror.xyz/0x29054eBcf5d36B7dFc87f82f3c0A23EE05CE4314/KduM90jp2uW6k7ZeqrHJZBagGMNYqdbJr37PDO5-z6Q).**
+
 ### About This Guide
 
 Welcome to the realm of blockchain-based authentication and elevated security! This comprehensive guide is your gateway to integrating Immutable Passport into your application. Immutable Passport is a revolutionary solution crafted specifically for gaming applications, enhancing both security and functionality—a crucial component for an exceptional gaming experience.
@@ -312,8 +314,6 @@ Congratulations! You've successfully integrated Immutable Passport into your app
 3. [Immutable Documentation](https://docs.immutable.com/)
 4. [Immutable Community Connect](https://www.immutable.com/community/connect)
 5. [Immutable Developers](https://www.immutable.com/developers)
-
-   To know more about Immutable Passport and How to Integrate into Your Application [Visit Here](https://mirror.xyz/0x29054eBcf5d36B7dFc87f82f3c0A23EE05CE4314/KduM90jp2uW6k7ZeqrHJZBagGMNYqdbJr37PDO5-z6Q).
 
 If you have any questions or challenges along the way, don't hesitate to reach out to the Immutable community or support. Happy building! 🚀🎮
 
